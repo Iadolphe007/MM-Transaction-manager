@@ -1,0 +1,80 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <div id="content">
+            <h2>MOMO transaction manager</h2>
+            <h4>
+                Sender <input type="text" placeholder=" sender" id="senderInput" />
+            </h4>
+            <h4>
+                Receiver
+                <input type="text" placeholder=" receiver" id="receiverInput" />
+            </h4>
+            <h4>Date <input type="date" placeholder=" " id="dateInput" /></h4>
+            <h4>
+                amount
+                <input type="number" placeholder=" amount in rwf" id="amountInput" />
+            </h4>
+            <label for="type of transaction">Trans type
+                <select name="transaction" id="transactionType">
+                    <option value="" id="transaction-select"></option>
+                    <option value="incoming" id="cash-in">cash in</option>
+                    <option value="outgoing" id="cash-out">cash out</option>
+                </select>
+            </label>
+            <br />
+            <button class="btn" id="save-btn">Save Transaction</button>
+            <h3>SAVED TRANSACTION</h3>
+
+            <div class="balance" id="balance">
+                <h3>Balance</h3>
+                <h4 id="balance-amount">0</h4>
+                <h3>total cash in</h3>
+                <h4 id="cash-in-amount">0</h4>
+                <h3>total cash out</h3>
+                <h4 id="cash-out-amount">0</h4>
+            </div>
+
+            <table id="transactions">
+                <tr>
+                    <th>Date</th>
+
+                    <th>Sender</th>
+
+                    <th>Receiver</th>
+
+                    <th>Trans type</th>
+
+                    <th>Amount</th>
+
+                    <th>Balance</th>
+
+                    <th>delete trns</th>
+                </tr>
+            </table>
+
+            <div class="savedTransaction" id="saved-transaction">
+                <table id="table-section"></table>
+            </div>
+
+
+        </div>
+        <br />
+        <br />
+        <button class="btn" type="reset" onclick="deleteAll()">Remove All Transactions</button>
+        <script src="index.js"></script>
+    </body>
+
+</html>

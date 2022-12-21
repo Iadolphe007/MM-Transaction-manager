@@ -1,0 +1,96 @@
+/** @format */
+
+body {
+	background-color: rgb(252, 252, 73);
+	color: rgb(5, 5, 5);
+	text-align: center;
+	justify-content: center;
+	margin-top: 3rem;
+	margin-left: 5rem;
+}
+
+.balance {
+	display: flex;
+	justify-content: space-around;
+}
+
+#senderInput {
+	margin-bottom: 3px;
+	width: 16rem;
+	height: 25px;
+	border: 1px solid;
+}
+#receiverInput {
+	margin-bottom: 3px;
+	width: 16rem;
+	height: 25px;
+	border: 1px solid;
+}
+#dateInput {
+	margin-bottom: 3px;
+	width: 10rem;
+	height: 25px;
+	border: 1px solid;
+}
+#amountInput {
+	margin-bottom: 3px;
+	width: 8rem;
+	height: 25px;
+	border: 1px solid;
+}
+#transactionType {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 5rem;
+	height: 20px;
+	border: 1px solid;
+}
+.btn {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	height: 25px;
+	background-color: rgb(8, 8, 8);
+	color: rgb(252, 245, 49);
+	width: 12rem;
+	border: 1px solid;
+	cursor: pointer;
+}
+#save-btn:hover {
+	color: rgb(9, 9, 9);
+	background-color: whitesmoke;
+	transition-duration: 0.4s;
+}
+#delete-btn {
+	background-color: rgb(252, 135, 135);
+	color: white;
+	border: 1 px solid rgb(252, 135, 135) d;
+	height: 20px;
+	width: auto;
+}
+table {
+	box-shadow: -2px 13px 13px -7px rgb(5, 5, 5, 0.9);
+	border-collapse: collapse;
+}
+th {
+	background-color: rgb(47, 194, 252);
+}
+td {
+	background-color: honeydew;
+	font-size: 16px;
+}
+th,
+td {
+	border: 0px solid black;
+	padding: 10px;
+	width: 27rem;
+	text-align: center;
+	border-collapse: collapse;
+}
+td:hover {
+	background-color: rgb(204, 232, 248);
+	transform: scale(1.12);
+	transition: transform 350ms ease-in;
+}
+/* #delete-btn {
+	background-color: rgb(255, 85, 85);
+} */
