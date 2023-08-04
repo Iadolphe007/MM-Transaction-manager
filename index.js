@@ -25,6 +25,7 @@ let localDate = JSON.parse(localStorage.getItem("dateArr"));
 let localAmount = JSON.parse(localStorage.getItem("amountArr"));
 let localTransType = JSON.parse(localStorage.getItem("transTypeArr"));
 
+
 if (localSenderName) {
 	senderNameArr = localSenderName;
 	receiverNameArr = localReceiverName;
